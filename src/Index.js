@@ -5,7 +5,6 @@ const server = express();
 server.use(express.json());
 server.use (cors());
 
-
 server.post("/imc", (req, res) => {
   const { altura, peso } = req.body; //constantes para parametros
   const imc = peso / altura ** 2;
